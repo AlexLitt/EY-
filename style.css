@@ -1,10 +1,24 @@
 body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
   background-color: #2E2E38;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+}
+
+.header__logo {
+  padding-left: 4%;
+  padding-top: 1%;
 }
 
 .header__banner {
-  margin-left: 0%;
+  margin: 0 auto;
+}
+
+.header__img {
+  margin: 0 auto;
+  margin-left: 15%;
+  padding-top: 1%;
 }
 
 .header__list {
@@ -18,13 +32,15 @@ body {
 
 .header__list {
   list-style: none;
+  margin-bottom: 0;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
 
 .header__link {
   color: white;
   text-decoration: none;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 .header__link:hover {
@@ -38,6 +54,11 @@ body {
   display: -o-flex;
   display: flex;
   background-color: #F6F6FA;
+}
+
+.main__container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .main__wrapper {
@@ -91,10 +112,25 @@ span {
   font-size:24px;
   font-weight:600;
   text-align: center;
+  margin-bottom: 1%;
+}
+
+.video__text--description {
+  margin-top: 0;
+}
+
+.video__link {
+  text-align: center;
+  display: block;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: black;
+  font-size:24px;
 }
 
 .link__list {
-  margin-left: 10%;
+  margin-left: 0%;
+  padding: 0;
 }
 
 .sidebar__link {
@@ -103,10 +139,10 @@ span {
 }
 
 .link__text {
-  text-align: center;
-  font-size:24px;
+  font-size:26px;
   font-weight:600;
   padding-top: 10%;
+  padding-left: 18%;
 }
 
 .link__list {
@@ -116,6 +152,10 @@ span {
 
 .link__item:hover {
   transform: scale(1.15);
+}
+
+.footer {
+  background-color: #2E2E38;
 }
 
 .footer__container {
@@ -151,4 +191,118 @@ span {
   justify-content: space-between;
   padding-top: 1%;
   width: 12%;
+}
+
+.footer__link {
+  margin-right: 5%;
+}
+
+
+ul.dropdown li {
+  position: relative;
+}
+
+ul.dropdown-inside {
+  position: absolute;
+  left: -9999px;
+}
+
+ul.dropdown li.dropdown-top {
+  display: inline;
+  float: left;
+  margin: 0 1px 0 0;
+}
+
+ul.dropdown li.dropdown-top a {
+  padding: 3px 10px 4px;
+  display: block;
+}
+
+ul.dropdown a.dropdown-top:hover {
+  padding: 2px 10px 5px;
+}
+
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+  display: block;
+  left: 0;
+}
+
+ul.dropdown .dropdown-inside {
+  color: white;
+}
+
+ul.dropdown .dropdown-inside a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.hide {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+<img src="img/logo.png" alt="" class="header__logo" width="70" height="70">
+<div class="header__banner">
+  <img  class="header__img" src="img/3.jpg" alt="" height="500" width="1000">
+</div>
+
+/*slider*/
+.slider{
+  max-width: 80%;
+  position: relative;
+  height: 300px;
+  margin-bottom: 130px;
+  margin: auto;
+}
+.slider .item img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.slider-dots {
+  text-align: center;
+
+}
+.slider-dots_item{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: #aaa;
+}
+
+
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
