@@ -1,0 +1,154 @@
+body {
+  background-color: #2E2E38;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+}
+
+.header__banner {
+  margin-left: 0%;
+}
+
+.header__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around
+}
+
+.header__list {
+  list-style: none;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.main {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  background-color: #F6F6FA;
+}
+
+.main__wrapper {
+  width: 70%;
+}
+
+.main__headline {
+  text-align: center;
+  font-size: 34px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.main__description {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size:24px;
+}
+
+.main__text {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 32px;
+  font-weight:600;
+  text-align: center;
+}
+
+.list__text {
+  font-size:24px;
+}
+
+span {
+  font-weight: 600;
+}
+
+.sidebar {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__video {
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.video__text {
+  font-size:24px;
+  font-weight:600;
+  text-align: center;
+}
+
+.link__list {
+  margin-left: 10%;
+}
+
+.sidebar__link {
+  margin-left: 30%;
+  padding-bottom: 20%;
+}
+
+.link__text {
+  text-align: center;
+  font-size:24px;
+  font-weight:600;
+  padding-top: 10%;
+}
+
+.link__list {
+  padding-left: 7%;
+  font-size: 18px;
+}
+
+.link__item:hover {
+  transform: scale(1.15);
+}
+
+.footer__container {
+  width: 80%;
+  margin: 0 auto;
+  padding:1% 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.footer__policy {
+  text-decoration: none;
+  color: white;
+  padding-top: 1.7%;
+}
+
+.footer__policy:hover {
+  text-decoration:underline;
+  font-weight: 600;
+}
+
+.footer__list {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1%;
+  width: 12%;
+}
